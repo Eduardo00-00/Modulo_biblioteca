@@ -9,6 +9,9 @@
                     <field name="name"/>
                     <field name="autor"/>
                     <field name="fecha_publicacion"/>
+                    <field name="dar_el_primer_numeros_para_sumar"/>
+                    <field name="dar_el_segundo_numeros_para_sumar"/>
+                    <field name="resultado"/>
                 </group>
                 </sheet>
             </form>
