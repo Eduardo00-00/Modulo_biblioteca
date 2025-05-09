@@ -5,6 +5,8 @@ class Libro(models.Model):
     _description = 'Libro'
 
     name = fields.Char(string='Título', required=True)
+    apellido = fields.Char(string='Apellido', required=True)
+    
    
     @api.depends('dar_el_primer_numeros_para_sumar', 'dar_el_segundo_numeros_para_sumar')
     def _compute_resultado(self):
