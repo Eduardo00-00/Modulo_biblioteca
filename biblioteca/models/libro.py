@@ -14,4 +14,5 @@ class Libro(models.Model):
     def _compute_resultado_funcion(self):
         for record in self:
             record.resultado = record.dar_el_primer_numeros_para_sumar + record.dar_el_segundo_numeros_para_sumar
+            # Aquí puedes agregar la lógica adicional que necesites para calcular el resultado
 
