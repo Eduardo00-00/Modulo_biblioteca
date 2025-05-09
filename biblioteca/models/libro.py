@@ -6,6 +6,8 @@ class Libro(models.Model):
 
     name = fields.Char(string='Título', required=True)
     apellido = fields.Char(string='Apellido', required=True)
+    autor = fields.Char(string='Autor', required=True)
+    editorial = fields.Char(string='Editorial', required=True)
     
    
     @api.depends('dar_el_primer_numeros_para_sumar', 'dar_el_segundo_numeros_para_sumar')
