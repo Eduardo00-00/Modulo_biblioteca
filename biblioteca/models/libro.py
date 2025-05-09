@@ -13,7 +13,7 @@ class Libro(models.Model):
     resultado = fields.Integer(string='Resultado', compute='_compute_resultado', store=True)
 
     @api.depends('dar_el_primer_numeros_para_sumar', 'dar_el_segundo_numeros_para_sumar')
-    def _compute_resultado(self):
+    def _compute_resultado_HT(self):
         for record in self:
             record.resultado = record.dar_el_primer_numeros_para_sumar + record.dar_el_segundo_numeros_para_sumar
 
